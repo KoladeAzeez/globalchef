@@ -1,0 +1,677 @@
+* {
+    box-sizing: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.header-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+    width: 100%;
+  
+}
+
+
+.header-codes {
+    flex: 1 1 0;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.header-codes a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+}
+nav.sample-nav{
+    background-color: #fff;
+    /* width: 100%;
+    display: flex;
+    flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    padding: 0 55px;
+    margin: 15px 0;
+
+}
+.ul-sample{
+    flex-wrap: wrap;
+   justify-content: center;
+}
+.sample-nav li{
+    list-style: none;
+    
+}
+
+.sample-nav a{
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+}
+
+.sample-brand{
+    background-image: url("//cdn.shopify.com/s/files/1/0026/1740/9636/files/GC_logo_email_300x300.jpg?v=1613723876") ;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 47px; 
+}
+/* .sample-2{
+    min-width: 80px;
+    margin: 0 auto;
+} */
+
+@media screen and (min-width: 768px){
+    nav ul{
+        display: flex;
+    }
+
+    nav li {
+        flex: 1 1 1;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    
+
+
+}
+/* Slide show section */
+.carousel-item{
+    text-align: center;
+    height: 475px; 
+ 
+}
+
+.slide-1{
+    background-image: url("https://cdn.shopify.com/s/files/1/0026/1740/9636/files/iStock-803609426.jpg?v=1543100709");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+.slide-2{
+    background-image: url("https://cdn.shopify.com/s/files/1/0026/1740/9636/files/iStock-598529908.jpg?v=1543100807");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: scale-up;
+
+}
+.slide-3{
+    background-image: url("https://cdn.shopify.com/s/files/1/0026/1740/9636/files/Courier.jpg?v=1628637290");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: scale-up;
+}
+.slide-4{
+    background-image: url("https://cdn.shopify.com/s/files/1/0026/1740/9636/files/Banner5.jpg?v=1589772480");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+.slide-5{
+    background-image: url("https://cdn.shopify.com/s/files/1/0026/1740/9636/files/welcome-to-my-business_1950x.jpg?v=1594698613");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: scale-up;
+}
+.slide-6{
+    background-image: url("https://cdn.shopify.com/s/files/1/0026/1740/9636/files/Kitchen.jpg?v=1628735229");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.description{
+    align-items: center;
+    padding-top: 150px; 
+    height: 500px;
+    isolation: isolate;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.description-details::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #3d4246;
+    opacity: .4;
+    z-index: -1;
+    height: 100%;
+}
+
+.description-details{
+    color: white;
+   list-style: none;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.description-details a{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    height: 80px;
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+
+/* Collection list style */
+
+
+.list-info{
+    text-align: center;
+}
+.list-info h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #3d4246;
+    padding: 30px;
+    padding-top: 100px;
+}
+
+.blocks{
+    width: 100%;
+    max-width:960px;
+    margin: 0 auto; 
+}
+.container-image {
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-evenly;
+
+}
+
+.box{
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    flex-grow: 1 1 1;
+}
+
+@media screen and (min-width: 768px) {
+    .blocks{
+        display: flex;
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto; 
+    }
+    .container-image {
+        display: flex;
+        flex-wrap: wrap ;
+        justify-content: space-evenly;
+    
+    }
+    
+    .box{
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        flex-grow: 0 1 1;
+    }
+}
+
+.container-image>div {
+    background-color: rgba(69, 59, 59, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.box-1 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0026/1740/9636/collections/A250_Asian_Male1A_1.png?v=1628633789");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+}
+
+.box-2 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0026/1740/9636/collections/E3A9301.png?v=1628634373");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box-3 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0026/1740/9636/collections/B200A_540x.jpg?v=1628634539");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box-4 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0026/1740/9636/collections/A110_Front_Female_540x.jpg?v=1628633352");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box-5 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0026/1740/9636/collections/Chef_revival.jpg?v=1637367962");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box-6 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0026/1740/9636/collections/Michael_sml_540x.jpg?v=1542939259");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box-7 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0026/1740/9636/collections/A900_Asian_Male1A_540x.png?v=1552008898");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box-8 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0026/1740/9636/collections/A950_Euro_Male3A.png?v=1543496931");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box-9 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0026/1740/9636/collections/KS85508ClogB_720x.jpg?v=1628634684");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box-10 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0026/1740/9636/collections/D100_720x.jpg?v=1543536243");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box-11 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0026/1740/9636/collections/StudentUniformKitFlyer_540x.jpg?v=1543536974");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    object-fit: cover;
+}
+
+.box-12 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0026/1740/9636/collections/T-Tool_5_540x.jpg?v=1637647913");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+}
+
+.collection_title {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.collection_title h3 {
+    top: 50%;
+    margin-top: 50%;
+}
+
+.collection_title::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #3d4246;
+    opacity: .4;
+    z-index: -1;
+
+}
+
+/* Sales style */
+
+/* .sale-now{
+   display: flex;
+} */
+.sale-now{
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.sales-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.content{
+    flex-basis: 100%;
+    flex-shrink: 0;
+    
+}
+
+.content img{
+    width: 300px;
+    padding-left: 35px;
+}
+.sale-now div h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #3d4246;
+
+}
+
+.sale-now div p{
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+}
+.sale-now div button{
+    background-color: red;
+    border: 0;
+    height: 40px;
+    width: 120px;
+ 
+   
+}
+
+#image-dc {
+    padding: 35px 0 35px 35px;
+}
+
+.sale-now div button a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+
+    .sale-now{
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .sales-content{
+        display: flex;
+    }
+    .content{
+        flex-basis: 30%;
+        flex-shrink: 0;
+    }
+
+    .content img{
+        width: 565px;
+        height: 363px;
+    }
+
+    #image-dc{
+        padding: 35px 35px 0px 35px;
+    }
+}
+
+/* Featured collection */
+.featured-title{
+    text-align: center;
+    padding-top: 30px;
+    color: #3d4246;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.featured-wrapper{
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+
+.featured-collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.collection-card{
+    flex: 0 0 40%;
+    margin-top: 30px;
+    /* text-align: center; */
+}
+
+.collection-card img{
+    width: 262px;
+    height: 500px;
+    padding-left: 50px;
+}
+
+#lastimage{
+    width: 220px;
+    height: 220px;
+}
+.collection-card a {
+    text-decoration: none;
+    color: #3d4246;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    
+    
+}
+
+
+.collection-card a:hover{
+    text-decoration: underline;
+}
+.collection-card dl{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-items: left; 
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .featured-wrapper{
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .collection-card img{
+        width: 220px;
+        height: 320px;
+
+    }
+    .featured-collection{
+        display: flex;
+        justify-content: space-between;
+    }
+    .collection-card{
+      flex: 0 0 0;
+    }
+    #lastimage{
+        width: 220px;
+        height: 320px;
+    }
+
+    
+}
+
+.featured-button{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.featured-button button {
+    color: white;
+    background-color: red;
+    width: 114px;
+    height: 43px;
+    padding: 10px 18px;
+    border: 0;
+}
+
+/* Footer */
+footer{
+    margin-top: 80px;
+    padding-top: 40px;
+    background-color: #f5f5f5;
+}
+.footer-wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.footer-info{
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.items{
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.footer-info ul{
+    list-style: none;
+    line-height: 40px;
+}
+
+@media screen and (min-width:768px){
+    
+    .footer-wrapper{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .items{
+        flex: 1;
+        text-align: left;
+    }
+    .footer-item-3 input{
+        width: 700%;
+        height: 406px;
+    }
+
+}
+
+/* .footer-info li{
+    
+} */
+.icon-wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.footer-icons{
+    display: flex;
+    flex-wrap: wrap;
+}
+.icons-1 ul{
+    display: flex;
+    text-align: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.icons-1 ul li{
+    flex: 0 10%;
+    box-sizing: border-box;
+    margin: 10px;
+    align-items: center;
+}
+.icons-1{
+    flex: 0 0 50%;
+}
+.footer-info li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-info li a:hover{
+    color: gray;
+}
+
+.footer-info h6{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #3d4246;
+}
+
+.footer-item-2 p{
+    line-height: 10px;
+}
+
+.footer-item-3 input{
+    width: 50%;
+    height: 46px;
+   
+}
+.footer-item-3 button{
+    background-color: red;
+    margin-left: 0;
+    border: 1px solid red;
+    color: white;
+    padding: 10px 18px;
+    left: 0;
+}
+
+
+.footer-icons div ul{
+    list-style: none;
+}
+
+.footer-icons div a {
+    text-decoration: none;
+    color: none;
+}
+
+@media screen and (min-width: 768px) {
+    .icon-wrapper{
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+}
